@@ -854,3 +854,197 @@ footer .box.motion h2 {
   animation-name: slide-up;
   animation-duration: 1s;
 }
+
+/* 모바일 네비 추가 */
+header .open {
+  display: none;
+}
+
+header .close {
+  display: none;
+}
+
+/* 모바일용 줄바꿈 */
+br.mo {
+  display: none;
+}
+
+/* 반응형 */
+/* 테블릿 모드: 1100px이하 ~ 951px */
+@media screen and (max-width: 1100px) {
+  .wrap {
+    min-width: 100%;
+  }
+
+  /* header */
+  header {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+  }
+
+  header .open {
+    display: block;
+    float: right;
+    font-size: 32px;
+    height: 60px;
+    padding-top: 5px;
+    box-sizing: border-box;
+  }
+
+  header .bg {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: none;
+  }
+
+  header .logo {
+    font-size: 30px;
+    letter-spacing: -4px;
+  }
+
+  header nav {
+    background-color: #fff;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+    z-index: 300;
+  }
+
+  header nav.on {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  header nav .close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 35px;
+    padding-top: 5px;
+    box-sizing: border-box;
+  }
+
+  header nav .gnb {
+    margin-top: 100px;
+  }
+
+  header nav .gnb li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    line-height: 60px;
+  }
+
+  header nav .gnb li a {
+    width: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+  header nav .gnb li a::after {
+    display: none;
+  }
+
+  /* section.visual */
+  section.visual {
+    margin-top: 60px;
+  }
+
+  section.visual .img img {
+    height: 100%;
+    width: auto;
+  }
+
+  section.visual .title {
+    left: 5%;
+  }
+
+  section.visual .menu {
+    width: 100%;
+    left: 5%;
+  }
+
+  section.visual .menu li {
+    margin-right: 30px;
+  }
+
+  section.visual .menu li p {
+    font-size: 17px;
+  }
+
+  .slick-dots {
+    right: 2.5%;
+  }
+
+  /* section.about */
+
+  section.about {
+    width: 100%;
+    height: 600px;
+  }
+
+  section.about img {
+    height: 100%;
+    width: auto;
+  }
+
+  section.about .inner .line {
+    width: 40%;
+  }
+
+  section.about .inner ul {
+    width: 80%;
+  }
+
+  section.about .inner ul li {
+    width: 50%;
+  }
+  section.about .inner ul li:nth-child(3) {
+    margin-left: 25%;
+  }
+
+  /* premium */
+  section.premium {
+    width: 100%;
+    height: 800px;
+  }
+
+  section.premium .title {
+    left: 5%;
+  }
+
+  section.premium .txtImg {
+    left: 5px;
+  }
+
+  /* global */
+
+  section.global {
+    width: 100%;
+  }
+
+  section.global ul li {
+    padding: 10px;
+  }
+
+  section.global ul li a p {
+    font-size: 15px;
+  }
+
+  section.global ul li a .img::after {
+    display: none;
+  }
+}
