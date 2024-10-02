@@ -5,3 +5,22 @@ $(function () {
     once: false, // 스크롤시 한번만 하고싶을 때 true
   });
 });
+
+// 헤더 이벤트 핸들러(fixHeader);
+
+let scrollValue = 0;
+scrollValue = $(document).scrollTop();
+fixHeader();
+
+$(window).on("scroll resize", function () {
+  scrollValue = $(document).scrollTop();
+  fixHeader();
+});
+
+function fixHeader() {
+  if (scrollValue > 150) {
+    $("header").addClass("on");
+  } else {
+    $("header").removeClass("on");
+  }
+}

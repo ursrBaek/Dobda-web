@@ -140,6 +140,10 @@ header {
   position: fixed;
   z-index: 100;
   top: 0;
+  transition: all 0.2s;
+}
+
+header.on {
   background-color: #fff;
 }
 
