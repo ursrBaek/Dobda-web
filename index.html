@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- script  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <title>돕다 | 반응형 웹</title>
   </head>
   <body>
@@ -65,7 +69,7 @@
       <!-- section.about -->
       <section class="about">
         <img src="img/main2_bg.jpg" alt="" />
-        <div class="inner">
+        <div class="inner animate" data-animate="motion">
           <h2>글로벌 컨시어지 서비스와 함께 하세요.</h2>
           <div class="line">
             <span></span>
@@ -106,7 +110,7 @@
 
       <!-- section.premium -->
       <section class="premium">
-        <span class="txtImg">
+        <span class="txtImg animate" data-animate="motion">
           <img src="img/pre_img.png" alt="" />
         </span>
         <div class="title">
@@ -118,15 +122,23 @@
           <a href="#">more</a>
         </div>
         <ul class="banner">
-          <li><img src="img/banner1.jpg" alt="" /></li>
-          <li><img src="img/banner2.jpg" alt="" /></li>
-          <li><img src="img/banner3.jpg" alt="" /></li>
-          <li><img src="img/banner4.jpg" alt="" /></li>
+          <li class="animate" data-animate="motion">
+            <img src="img/banner1.jpg" alt="" />
+          </li>
+          <li class="animate" data-animate="motion">
+            <img src="img/banner2.jpg" alt="" />
+          </li>
+          <li class="animate" data-animate="motion">
+            <img src="img/banner3.jpg" alt="" />
+          </li>
+          <li class="animate" data-animate="motion">
+            <img src="img/banner4.jpg" alt="" />
+          </li>
         </ul>
       </section>
 
       <!-- section.global -->
-      <section class="global">
+      <section class="global animate" data-animate="motion">
         <div class="title">
           <h2>Global Concierge Services</h2>
           <p>
@@ -199,7 +211,7 @@
           <li>사업자등록번호:123-12-12345 | 이메일: abc@naver.com</li>
           <li><span class="copyright">COPYRIGHT 2024</span></li>
         </ul>
-        <div class="box">
+        <div class="box animate" data-animate="motion">
           <h2>
             전세계 어디든 나만의 컨시어지가 있다.<br />
             For Your Business & Life
