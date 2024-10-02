@@ -210,7 +210,21 @@ section.visual .img {
   width: 94%;
   position: relative;
   text-align: center;
+  /* overflow: hidden; */
+}
+
+section.visual .img .imgBox {
+  display: block;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+section.visual .img .page {
+  position: absolute;
+  right: -43px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 section.visual .img img {
@@ -327,19 +341,19 @@ section.visual .img .mask.d {
   }
 }
 
-section.visual .img .mask.a {
+section.visual .slick-active .img .mask.a {
   animation-name: mask;
   animation-duration: 0.4s;
 }
-section.visual .img .mask.b {
+section.visual .slick-active .img .mask.b {
   animation-name: mask;
   animation-duration: 0.6s;
 }
-section.visual .img .mask.c {
+section.visual .slick-active .img .mask.c {
   animation-name: mask;
   animation-duration: 0.8s;
 }
-section.visual .img .mask.d {
+section.visual .slick-active .img .mask.d {
   animation-name: mask;
   animation-duration: 1s;
 }
@@ -354,11 +368,11 @@ section.visual .img .mask.d {
   }
 }
 
-section.visual .title h2 {
+section.visual .slick-active .title h2 {
   animation-name: slide-up;
   animation-duration: 1.5s;
 }
-section.visual .title p {
+section.visual .slick-active .title p {
   animation-name: slide-up;
   animation-duration: 2.2s;
 }
@@ -368,10 +382,10 @@ section.visual .menu {
   animation-duration: 2.8s;
 }
 
-section.visual .img img {
+section.visual .slick-active .imgBox img {
   transform: scale(1);
   animation-name: scaleani;
-  animation-duration: 2s;
+  animation-duration: 5.2s;
 }
 
 @keyframes scaleani {
@@ -383,7 +397,28 @@ section.visual .img img {
   }
 }
 
-/* about */
+/* visual - slick-dots */
+.slick-dots {
+  position: absolute;
+  right: 4.5%;
+  bottom: 30px;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #39312b;
+}
+
+/* section.about */
 section.about {
   width: 95%;
   margin: 40px auto;
