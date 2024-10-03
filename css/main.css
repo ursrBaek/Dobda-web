@@ -1314,3 +1314,98 @@ br.mo {
     top: -5%;
   }
 }
+
+/* 320px 이하 - 280px */
+@media screen and (max-width: 320px) {
+  section.visual .title h2 {
+    font-size: 22px;
+  }
+  section.visual .title p {
+    font-size: 11px;
+  }
+
+  section.visual .img .page img {
+    width: 55%;
+    margin-left: 15%;
+  }
+
+  .slick-dots li button {
+    height: 8px;
+    margin-bottom: 15px;
+  }
+
+  /* section.about */
+  section.about {
+    height: 480px;
+  }
+
+  section.about .inner h2 {
+    font-size: 16px;
+  }
+
+  section.about .inner ul li h3 {
+    font-size: 14px;
+  }
+
+  section.about .inner ul li {
+    font-size: 11px;
+  }
+
+  /* section.premium */
+  section.premium {
+    height: 600px;
+  }
+
+  section.premium .title h2 {
+    font-size: 16px;
+  }
+
+  section.premium p {
+    font-size: 11px;
+  }
+
+  section.premium .banner {
+    height: 350px;
+    top: 38%;
+  }
+
+  section.premium .txtImg {
+    top: 33%;
+  }
+
+  section.premium .banner li:nth-child(1) {
+    width: 25%;
+  }
+  section.premium .banner li:nth-child(2) {
+    width: 25%;
+  }
+  section.premium .banner li:nth-child(3) {
+    width: 25%;
+  }
+
+  /* section.global */
+  section.global .title h2 {
+    font-size: 16px;
+  }
+
+  section.global .title p {
+    font-size: 11px;
+  }
+
+  section.global ul li a h3 {
+    font-size: 13px;
+  }
+
+  /* footer */
+  footer ul li {
+    font-size: 10px;
+  }
+
+  footer .box {
+    padding: 50px 0;
+  }
+
+  footer .box h2 {
+    font-size: 14px;
+  }
+}
