@@ -1203,3 +1203,114 @@ br.mo {
     font-size: 17px;
   }
 }
+
+/* 750px 이하 모바일 디바이스 */
+@media screen and (max-width: 750px) {
+  /* visual */
+  section.visual {
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  section.visual .img {
+    width: 87%;
+  }
+
+  section.visual .img img {
+    height: 80vh;
+    width: auto;
+  }
+
+  section.visual .img .page img {
+    width: 75%;
+    height: auto;
+    margin-left: 8%;
+  }
+
+  br.mo {
+    display: block;
+  }
+
+  section.visual .title h2 {
+    font-size: 29px;
+  }
+
+  section.visual .title p {
+    font-size: 14px;
+  }
+
+  .slick-dots {
+    right: 20px;
+  }
+
+  /* section.about */
+
+  section.about .inner h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  section.about .inner .line {
+    display: none;
+  }
+
+  section.about .inner ul li {
+    width: 100%;
+    margin: 20px 0 0;
+    font-size: 13px;
+  }
+
+  section.about .inner ul li h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  /* section. premium */
+  section.premium {
+    height: 685px;
+  }
+
+  section.premium .title h2 {
+    font-size: 20px;
+  }
+
+  section.premium .title a {
+    font-size: 18px;
+  }
+
+  section.premium .title a::before {
+    width: 60px;
+    height: 12px;
+  }
+
+  section.premium .title p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  section.premium .txtImg {
+    left: 0;
+    height: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  section.premium .banner {
+    height: 400px;
+    width: 100%;
+  }
+
+  section.premium .banner li:nth-child(1) {
+    left: 10%;
+  }
+  section.premium .banner li:nth-child(2) {
+    left: 5%;
+  }
+  section.premium .banner li:nth-child(3) {
+    left: 42%;
+  }
+  section.premium .banner li:nth-child(4) {
+    left: 44%;
+    top: -5%;
+  }
+}
